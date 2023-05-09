@@ -1,0 +1,123 @@
+:root{
+    
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --light:#EEE;
+    --pink:#EC4899;
+    --purple:#8B5CF6;
+    --gray:#6B7280;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    font-family: 'Arial',sans-serif ;
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   align-items: center;
+}
+header{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.header h1{
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+#new-task-input{
+    outline: none;
+    border: none;
+    padding: 10px 0px 10px 10px;
+    background-color: var(--darker);
+    width: 500px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--gray);
+    
+}
+#new-task-input:focus{
+    background-color: var(--darkest);
+}
+#new-task-input::placeholder{
+    color: var(--gray);
+}
+#task-submit{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--darker);
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--gray);
+    
+
+}
+#task-submit:hover{
+    background-color: var(--darkest);
+    cursor: pointer;
+}
+.task{
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darker);
+    padding: 10px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+/* .content{
+    margin-right: 5px;
+    width: 80%;
+} */
+.text{
+    width: 350px;
+    outline: none;
+    border: none;
+    background: none;
+    color: var(--gray);
+    font-weight: 700;
+    
+}
+.text::placeholder{
+    color: var(--gray);
+}
+.text:not(:read-only){
+    color: #8B5CF6;
+}
+
+
+.actions button {
+    outline: none;
+    border: none;
+    background: none;
+    font-weight: 700;
+    /* color: var(--gray); */
+    
+}
+.edit{
+    color: #8B5CF6;
+}
+.delete{
+    color: crimson;
+}
+.edit:hover{
+opacity: 0.5;    transition: all 0.15s;
+    cursor: pointer;
+}
+.delete:hover{
+    opacity: 0.5;   
+     transition: all 0.15s;
+    cursor: pointer;
+}
